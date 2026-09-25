@@ -31,7 +31,7 @@ export default function App() {
       />
 
       {/* Main Sections */}
-      <main className="flex-grow">
+      <main className="flex-grow pt-20 md:pt-24">
         <Hero
           onOpenResume={() => setIsResumeOpen(true)}
           onOpenContact={() => setIsContactOpen(true)}

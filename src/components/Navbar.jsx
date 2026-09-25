@@ -45,7 +45,7 @@ export default function Navbar({ onOpenResume, onOpenContact }) {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
         isScrolled
           ? 'py-2.5 bg-white/90 backdrop-blur-md shadow-sm border-b border-neutral-100'
           : 'py-3.5 md:py-4 bg-[#fbfbfb]/80 backdrop-blur-sm'
@@ -126,7 +126,7 @@ export default function Navbar({ onOpenResume, onOpenContact }) {
               href={personalInfo.whatsapp}
               target="_blank"
               variant="primary"
-              className="!px-3.5 !py-2 !text-xs md:hidden"
+              className="!px-3.5 !py-2 !text-xs md:hidden text-nowrap"
             >
               Hire Me
             </RollingButton>
@@ -158,7 +158,7 @@ export default function Navbar({ onOpenResume, onOpenContact }) {
                 <ArrowUpRight size={16} className="opacity-50" />
               </a>
             ))}
-            <div className="pt-3 mt-1 border-t border-neutral-100 flex flex-col gap-2">
+            {/* <div className="pt-3 mt-1 border-t border-neutral-100 flex flex-col gap-2">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
@@ -177,7 +177,7 @@ export default function Navbar({ onOpenResume, onOpenContact }) {
               >
                 Chat on WhatsApp (+91 8469974919)
               </a>
-            </div>
+            </div> */}
           </div>
         )}
       </div>

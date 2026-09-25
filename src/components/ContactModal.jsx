@@ -121,7 +121,7 @@ export default function ContactModal({ isOpen, onClose }) {
                 ></textarea>
               </div>
 
-              <div className="pt-2 flex items-center justify-between gap-3">
+              <div className="pt-2 flex max-md:flex-wrap items-center justify-between gap-3">
                 <a
                   href={personalInfo.whatsapp}
                   target="_blank"
